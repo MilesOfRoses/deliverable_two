@@ -1,11 +1,11 @@
 function suggestClothing() {
 
 	/*************** Declaring variables ***************/
-	let tempClothing;
-	let eventTypeClothing;
-	let result;
-	let tempFahr;
-	let EventType;
+	let tempFahr; //input
+	let EventType; //input
+	let tempClothing; //output
+	let eventTypeClothing; //output
+	let result; //output
 
 	/*************** INPUT SECTION ***************/
 	tempFahr = parseFloat(document.getElementById("tempFahr").value); 
@@ -20,7 +20,7 @@ function suggestClothing() {
 		tempClothing = "no jacket.";
 	} else { //input validation
 		alert("Please select a temperature");
-		return;
+		return; //close the function
 	}
 
 	if (EventType == "Casual") { //determine clothing based on the event type
@@ -31,7 +31,7 @@ function suggestClothing() {
 		eventTypeClothing = "a suit";
 	} else { //input validation
 		alert("Please select an event type");
-		return;
+		return; //close the function
 	}
 	/*************** OUTPUT SECTION ***************/
 	result = "Since it is " + tempFahr + " degrees and you are going to a " + EventType + " event, you should wear " + eventTypeClothing + " and " + tempClothing;
