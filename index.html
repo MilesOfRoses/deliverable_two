@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>What to Wear</title>	
+</head>
+<body>
+	<p>What is the temperature? (in fahrenheit) <input type="number" id="tempFahr" value=""></p>
+	<label for="EventType">Is this a Casual, Semi-Formal, or Formal event? </label>
+	<select id="EventType">
+	  <option value="">--Please select event type--</option>
+	  <option value="Casual">Casual</option>
+	  <option value="Semi-Formal">Semi-Formal</option>
+	  <option value="Formal">Formal</option>
+	</select>
+	<br>
+	<button onclick="suggestClothing()">Suggest Clothing</button>
+	<p id="result"></p>
+	<script src="js/script.js"></script>
+</body>
+</html>
